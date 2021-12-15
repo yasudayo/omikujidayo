@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじ</title>
+    <style>
+        body{
+            background-color: #ff8f8f;
+        }
+
+        p{
+            text-align: center;
+            font-size: 2em;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let kujis = ['大吉','吉','吉','小吉','小吉','末吉','末吉','凶','凶','大凶'];
+        let kuji = Math.floor(Math.random() * 9);
+        console.log(kujis[kuji]);
+        document.write('<p>あなたの2022年の運勢は' +kujis[kuji] + 'です。</p>');
+        if(kujis[kuji] == '大吉') {
+            document.write('<br>　　　　　　　　　　　　　　　　　　　　　　　　　　　BTSのButter聴きながらじゃがバター食べると良い。');
+        }
+        if(kujis[kuji] == '吉') {
+            document.write('<br>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　地球グミ食べたら酸っぱさで頭が冴える');
+        }
+        if(kujis[kuji] == '小吉') {
+            document.write('<br>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　お正月にイカ2貫食べればいい。');
+        }
+        if(kujis[kuji] == '末吉') {
+            document.write('<br>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　大丈夫、凶じゃない。');
+        } 
+        if(kujis[kuji] == '凶') {
+            document.write('<br>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　自分良ければ全てよし。');
+        }
+        if(kujis[kuji] == '大凶') {
+            document.write('<br>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　吉の書き間違い');
+        }
+       
+    </script>
+</body>
+</html>
